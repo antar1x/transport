@@ -1,0 +1,210 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Демонтаж, вантажні перевезення, переїзди та вивіз будівельного сміття.">
+    <title>Вантажні послуги | Швидко та надійно</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="{% url 'home' %}">
+                <span class="logo-mark">В</span>
+                <span>ВАНТАЖНІ <span class="logo-accent">ПОСЛУГИ</span></span>
+            </a>
+
+            <nav class="main-nav" aria-label="Головна навігація">
+                <a href="#services">Послуги</a>
+                <a href="#transport">Транспорт</a>
+                <a href="#contacts">Контакти</a>
+            </nav>
+
+            <div class="header-phones">
+                <a class="header-phone" href="tel:+380998739852"><span>Телефонуйте</span><strong>+380 99 873 98 52</strong></a>
+                <a class="header-phone header-phone-secondary" href="tel:+380980565364"><strong>+380 98 056 53 64</strong></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">ВАНТАЖНІ ПОСЛУГИ У ВАШОМУ МІСТІ</p>
+                    <h1>Демонтаж, переїзди та перевезення без зайвого клопоту</h1>
+                    <p class="hero-description">Беремо на себе важку роботу: від акуратного демонтажу до вивозу будівельного сміття.</p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#contacts">Отримати консультацію</a>
+                        <a class="button button-secondary" href="#services">Переглянути послуги</a>
+                    </div>
+
+                    <ul class="hero-benefits">
+                        <li>Власний транспорт</li>
+                        <li>Досвідчені вантажники</li>
+                        <li>Працюємо за домовленістю</li>
+                    </ul>
+                </div>
+
+                <div class="hero-card" aria-label="Наші переваги">
+                    <p class="card-label">ПРАЦЮЄМО ДЛЯ ВАС — ЯК ДЛЯ СЕБЕ</p>
+                    <p class="card-title">Швидко. Якісно. Надійно.</p>
+                    <div class="card-line"></div>
+                    <p class="card-note">Підберемо транспорт і бригаду під ваше завдання.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-services" id="services">
+            <div class="container quick-services-grid">
+                <article><span>01</span><h2>Демонтаж</h2><p>Акуратно розберемо та винесемо.</p></article>
+                <article><span>02</span><h2>Переїзди</h2><p>Квартирні й офісні переїзди.</p></article>
+                <article><span>03</span><h2>Перевезення</h2><p>Вантажі будь-якої складності.</p></article>
+                <article><span>04</span><h2>Вивіз сміття</h2><p>Швидко залишимо простір чистим.</p></article>
+            </div>
+        </section>
+
+        <section class="section services-detail">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">НАШІ ПОСЛУГИ</p>
+                    <h2>Допоможемо з роботою, яку не хочеться робити самому</h2>
+                    <p>Уточнюємо деталі, підбираємо людей і транспорт, погоджуємо вартість — і приїжджаємо в обумовлений час.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">⌂</div>
+                        <h3>Квартирні переїзди</h3>
+                        <p>Пакування, винесення меблів, завантаження, перевезення та занесення на новому місці.</p>
+                        <a href="#request">Дізнатися вартість <span>→</span></a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">▣</div>
+                        <h3>Офісні переїзди</h3>
+                        <p>Організуємо переїзд офісу так, щоб команда якомога швидше повернулася до роботи.</p>
+                        <a href="#request">Дізнатися вартість <span>→</span></a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">⚒</div>
+                        <h3>Демонтаж</h3>
+                        <p>Демонтуємо меблі, перегородки, покриття та інші конструкції будь-якої складності.</p>
+                        <a href="#request">Дізнатися вартість <span>→</span></a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">♜</div>
+                        <h3>Вантажні перевезення</h3>
+                        <p>Перевеземо будівельні матеріали, меблі, техніку та інші габаритні вантажі.</p>
+                        <a href="#request">Дізнатися вартість <span>→</span></a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">♙</div>
+                        <h3>Послуги вантажників</h3>
+                        <p>Обережно завантажимо, розвантажимо, піднімемо на поверх і розставимо речі.</p>
+                        <a href="#request">Дізнатися вартість <span>→</span></a>
+                    </article>
+                    <article class="service-card service-card-highlight">
+                        <p class="service-number">06</p>
+                        <h3>Вивіз будівельного сміття</h3>
+                        <p>Вивеземо мішки, залишки матеріалів і великогабаритне сміття після ремонту.</p>
+                        <a href="#request">Залишити заявку <span>→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="transport-section" id="transport">
+            <div class="container transport-layout">
+                <div class="transport-copy">
+                    <p class="eyebrow">ВЛАСНИЙ АВТОПАРК</p>
+                    <h2>Транспорт для завдань різного масштабу</h2>
+                    <p>Не переплачуйте за зайвий об’єм. Ми підкажемо, який автомобіль підійде саме для вашого вантажу.</p>
+                    <a class="button button-primary" href="#request">Підібрати транспорт</a>
+                </div>
+
+                <div class="transport-list">
+                    <article class="vehicle-card vehicle-small">
+                        <p class="vehicle-type">ЛЕГКІ ПЕРЕВЕЗЕННЯ</p>
+                        <h3>Газель</h3>
+                        <p>Для меблів, техніки, невеликих переїздів і доставок.</p>
+                        <span class="vehicle-load">до 1,5 т</span>
+                        <img class="vehicle-image" src="{% static 'main/images/gazelle.png' %}" alt="Автомобіль Газель">
+                    </article>
+                    <article class="vehicle-card vehicle-medium">
+                        <p class="vehicle-type">ВЕЛИКІ ВАНТАЖІ</p>
+                        <h3>ЗІЛ</h3>
+                        <p>Для будматеріалів, вивозу сміття та об’ємних вантажів.</p>
+                        <span class="vehicle-load">до 5 т</span>
+                        <img class="vehicle-image" src="{% static 'main/images/zil.png' %}" alt="Вантажівка ЗІЛ">
+                    </article>
+                    <article class="vehicle-card vehicle-large">
+                        <p class="vehicle-type">МАСШТАБНІ РОБОТИ</p>
+                        <h3>КамАЗ</h3>
+                        <p>Для значних обсягів будівельного сміття й матеріалів.</p>
+                        <span class="vehicle-load">до 10 т</span>
+                        <img class="vehicle-image" src="{% static 'main/images/kamaz.png' %}" alt="Вантажівка КамАЗ">
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section advantages-section">
+            <div class="container">
+                <div class="section-heading section-heading-centered">
+                    <p class="eyebrow">ЧОМУ ОБИРАЮТЬ НАС</p>
+                    <h2>Робимо відповідально — як для себе</h2>
+                </div>
+                <div class="advantages-grid">
+                    <article><span>01</span><h3>Досвідчені бригади</h3><p>Знаємо, як безпечно працювати з важкими та крихкими речами.</p></article>
+                    <article><span>02</span><h3>Чіткі домовленості</h3><p>Погоджуємо обсяг роботи, ціну й час приїзду до початку робіт.</p></article>
+                    <article><span>03</span><h3>Акуратний підхід</h3><p>Бережемо ваші речі, під’їзд, приміщення та час.</p></article>
+                    <article><span>04</span><h3>Зручний зв’язок</h3><p>Залишайте заявку або телефонуйте — швидко відповімо й проконсультуємо.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="request-section" id="request">
+            <div class="container request-layout">
+                <div class="request-copy">
+                    <p class="eyebrow">ЗАЛИШТЕ ЗАЯВКУ</p>
+                    <h2>Розрахуємо вартість вашого замовлення</h2>
+                    <p>Залиште контакти й коротко опишіть задачу. Ми уточнимо деталі та запропонуємо оптимальний варіант.</p>
+                </div>
+
+                <form class="request-form" method="post">
+                    {% csrf_token %}
+                    {% if success_message %}
+                        <p class="form-success">{{ success_message }}</p>
+                    {% endif %}
+                    {% for field in form %}
+                        <div class="form-field">
+                            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                            {{ field }}
+                            {% for error in field.errors %}<small class="form-error">{{ error }}</small>{% endfor %}
+                        </div>
+                    {% endfor %}
+                    <button class="button button-primary" type="submit">Надіслати заявку</button>
+                    <p class="form-policy">Надсилаючи форму, ви погоджуєтеся на обробку персональних даних.</p>
+                </form>
+            </div>
+        </section>
+
+        <section class="contacts-banner" id="contacts">
+            <div class="container contacts-content">
+                <div>
+                    <p class="eyebrow">ПОТРІБНА ДОПОМОГА?</p>
+                    <h2>Опишіть завдання — підкажемо рішення та зорієнтуємо по ціні</h2>
+                </div>
+                <div class="contacts-actions">
+                    <p>Ваш менеджер — <strong>Володимир</strong></p>
+                    <a class="button button-primary" href="tel:+380998739852">+380 99 873 98 52</a>
+                    <a class="contact-second-phone" href="tel:+380980565364">+380 98 056 53 64</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
