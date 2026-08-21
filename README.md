@@ -14,7 +14,7 @@ python manage.py runserver
 ## Деплой на Render
 
 1. Завантажте код на GitHub, не додаючи `.env` і `venv`.
-2. У Render створіть **Web Service** з цього GitHub-репозиторію й у полі **Root Directory** вкажіть `transport`.
+2. У Render створіть **Web Service** з цього GitHub-репозиторію. Поле **Root Directory** залиште порожнім: `manage.py` вже лежить у корені репозиторію.
 3. Build Command:
 
    ```text
